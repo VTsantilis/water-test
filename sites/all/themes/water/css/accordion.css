@@ -28,3 +28,6 @@ ul.booktree > li.booktree {
 ul.booktree > li.booktree:hover {
   background: rgba(58, 137, 201, 0.75);
 }
+#block-system-main > div > ul.booktree{
+    padding-right: 20px;
+}
