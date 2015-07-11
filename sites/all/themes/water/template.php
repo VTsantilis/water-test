@@ -81,6 +81,9 @@ function water_preprocess_page(&$vars) {
     ));
       
       }
+      
+      $view = node_view($vars['node']);
+      $vars['rich_title'] = render($view['field_rich_title']);
   }
     
         

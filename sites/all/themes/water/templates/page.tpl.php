@@ -33,12 +33,16 @@ header: search_block
 
         <section class="listing clearfix <?php if (($page['sidebar_first'] || $page['sidebar_second']) && strtolower(current_path()) != 'persons'){print 'sidebars';} ?>">
             <!-- #title -->
+            <?php if ($rich_title){ 
+            print render($rich_title);   
+            } else {
+            ?>
             <?php print render($title_prefix); ?>
             <?php if ($title):?>
             <h1><?php print $title; ?></h1>
             <?php endif; ?>
             <?php print render($title_suffix); ?>
-
+            <?php } ?>
             <!-- #help -->
             <?php print render($page['help']); ?>
 
