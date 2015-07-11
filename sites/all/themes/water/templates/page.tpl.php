@@ -33,9 +33,9 @@ header: search_block
 
         <section class="listing clearfix <?php if (($page['sidebar_first'] || $page['sidebar_second']) && strtolower(current_path()) != 'persons'){print 'sidebars';} ?>">
             <!-- #title -->
-            <?php if ($rich_title){ 
+            <?php if ($rich_title){ //display rich title if is set
             print render($rich_title);   
-            } else {
+            } else { //display regular title
             ?>
             <?php print render($title_prefix); ?>
             <?php if ($title):?>
